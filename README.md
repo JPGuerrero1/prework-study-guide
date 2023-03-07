@@ -18,4 +18,4 @@ To use the study guide, you can review the notes listed in the available section
 
 ## License
 
-- Please refer to the LICENSE in the respository.
+Please refer to the LICENSE in the respository.
