@@ -17,34 +17,89 @@
 
     <main>
       <section class="card" id="html-section">
-        <h2>HTML</h2>
+        <h3>HTML</h3>
+        <p><strong>Note: HTML elements must be encapsulated in "<...>" brackets.</strong></p><br>
+
+        <h2>HTML Elements</h2><br>
         <ul>
-          <li>The head element contains information about the webpage.</li>
-          <li>The body element represents the visible content shown to the user.</li>
+          <li>The 'head' element contains information, or metadata, about the webpage and is not visible to the user.</li><br>
+          <li>The 'body' element contains all of the visible content we want shown to the user.</li><br>
+          <li>The 'link' element connects an external source to the HTML file, and is followed by the 'rel' attribute, which specifies the relation between the current and linked file.</li><br>
+          <li>The 'meta' element defines the metadata in an HTML file like the character set, description, keywords, author, and the viewport.</li><br>
         </ul>
 
-    </section>
+        <h2>HTML Body Elements</h2><br>
+        <ul>
+          <li>The elements 'h1' through 'h6' create headings that will be visible in the web application.</li><br>
+          <li>The 'p' element creates a paragraph of text.</li><br>
+          <li>The 'ul' and 'ol' elements stand for 'unordered list' (bullet points) and 'ordered list' (numbered or lettered), to put listed items in these lists, use the 'li' element.</li><br>
+          <li>The 'br' element creates a text break.</li><br>
+          <li>The 'section' element allows a body of code and text to be separated into identifiable parts with thematic content.</li><br>
+        </ul>
+
+      </section>
 
     <section class="card" id="css-section">
-      <h2>CSS</h2>
+      <h3>CSS</h3>
+      <p><strong>Note: CSS declarations have a property followed by a value and ended with a semicolon (;).</strong></p><br>
+      <h2>CSS Styles</h2><br>
       <ul>
-        <li>Enter CSS notes here.</li>
+        <li>Inline CSS directly styles an element in the HTML file, it applies to a specific tag using the 'style' HTML attribute.</li><br>
+        <li>Internal CSS contains rules for a webpage in the head section of an HTML file, these rules only apply to the page, but can style multiple elements using the 'style' HTML attribute.</li><br>
+        <li>External CSS allows rules for a webpage to be kept in a different file separate from the initial HTML file. It can be added using the 'link' element, 'ref' and 'href' attributes, and the file location of the style sheet.</li><br>
+      </ul>
+
+      <h2>CSS Capabilities</h2><br>
+      <ul>
+        <li>Visual aspects of a webpage that can be styled with CSS are text scaling, image scaling, and text alignment.</li><br>
+        <li>For a more in depth styling, CSS can also change aspects like underlining, bolding, italicising, shadows, and side-margin spacing.</li><br>
       </ul>
 
     </section>
 
-    <section class="card" id="git-section">
-      <h2>Git</h2>
+    <section class="card" id="git-main-section">
+      <h3>Git</h3><br>
+      <h2>Git Navigation</h2><br>
       <ul>
-        <li>Enter git notes here.</li>
-      </ul>
+        <li>The navigation commands 'cd' and 'cd ..' allow you to navigate into and out of directories on your local machine.</li><br>
+        <li>The navigation commands 'ls' and 'pwd' show you what directories are available from your current one, and what directory you're currently in.</li><br>
+        <li>The navigation commands 'mkdir' and 'touch', followed by a unique name, allow you to make a new directory, and add a file into a directory.</li><br>
+      </ul><br>
+
+      <h2>Git Commands</h2><br>
+      <ul>
+        <li>The git command 'git branch -r' creates a list of available branches on your local and remote repos.</li><br>
+        <li>The git command 'git branch -d' will delete a branch on your local repo, adding '-r' will remove it from your local and remote tracking repos.</li><br>
+        <li>The git command 'git checkout', followed by an existing branch, will switch you from your current branch, to the one specified in the command.</li><br>
+        <li>The git command 'git checkout -b' followed by a unique branch name will create a new branch off of the main and will switch you over to that new working branch.</li><br>
+        <li>The git commands 'git pull' and 'git push', followed by the remote name the branch you wish to pull or push, will move data from your remote to your local repo (pull), and from your local to your remote repo (push).</li><br>
+      </ul><br>
+
+      <h2>Sending a commit in Git</h2><br>
+      <ul>
+        <li>Start by prepping your file(s) using the 'git add -A', putting your file(s) into a staging phase.</li><br>
+        <li>Then, use the 'git commit -m' command, followed by a short description of the changes you've made enclosed in quotation marks, to commit your changes locally.</li><br>
+        <li>Following this, use the 'git pull origin main' command to make sure your local branch is up to date with the base branch.</li><br>
+        <li>Finally, use the 'git push' command, followed by the remote name and the branch you wish to push, to push your changes to the remote repo on Github and prep for a PR.</li><br>
+      </ul><br>
 
     </section>
 
     <section class="card" id="javascript-section">
-      <h2>Javascript</h2>
+      <h3>JavaScript</h3><br>
+      <h2>JavaScript Keywords</h2><br>
       <ul>
-        <li>Enter javascript notes here.</li>
+        <li>The keyword, or keyword, 'var' is used to create a variable, and is followed a name for the variable, an equal sign (=), and an assignment operator, which is the data that will be assigned to the variable.</li><br>
+        <li>The keyword 'function' is a reusable block of code that performs a specific task, similar to a variable in the sense that we can use it to declare a new variable with a unique name. However, with a function we can also define parameters inside parenthesis so that when we call the function later, it can execute the given parameters.</li><br>
+        <li>The keyword 'console.log' outputs a message to the application's web console using an argument. An argument is typically a name previously assigned to a variable or a function.</li><br>
+        <li>The keyword 'for' is used to create loops for code that must be continuosly executed until certain parameters are met; this is known as a 'for loop'.</li><br>
+        <li>The keyword 'if' is used to create conditional statements for the code to execute only if certain parameters are met.</li><br>
+      </ul>
+
+      <h2>JavaScript Tips</h2><br>
+      <ul>
+        <li>If there are multiple possibilities in a 'for loop', you can use an 'else if' statement to account for this. Meaning, you can have multiple different outputs depending on the input.<br>(i.e. 'if' path is blocked, go around it. 'Else if', continue walking path).</li><br>
+        <li>An 'array' is a single variable used to store multiple kinds of similar data. This is similar to a variable, however instead of assigning one value, you can assign multiple values by grouping them together with a set of brackets ([]), and separating the values with commas (,).<strong> Note that an array of data is numbered starting from '0'.</strong></li><br>
       </ul>
 
     </section>
@@ -52,7 +107,7 @@
     </main>
 
     <footer>
-      <p>I can code!</p>
+      <h3>I can code!<h3>
     </footer>
     <script src="./assets/script.js"></script>
   </body>
